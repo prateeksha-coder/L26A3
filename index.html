@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>JavaScript class static method</h1>
     <p id="hello"></p>
     <p id="hi"></p>
     <p id="welcome"></p>
     <script>
-        class Student{
-            constructor(name){
-                this.name=name;
+        class Student {
+            constructor(name) {
+                this.name = name;
             }
-            static hello(){
+            static hello() {
                 return "Helloo!!";
             }
-            static welcome(x){
-                return "WELCOME!!" +x.name;
+            static welcome(x) {
+                return "WELCOME!!" + x.name;
             }
-            hi(){
-                return "Hi!!"+this.name;
+            hi() {
+                return "Hi!!" + this.name;
             }
         }
-        myname=new Student("Carol");
-        document.getElementById("hello").innerHTML=Student.hello();
-        document.getElementById("hi").innerHTML=myname.hi();
-        document.getElementById("welcome").innerHTML=Student.welcome(myname);
+        myname = new Student("Carol");
+        document.getElementById("hello").innerHTML = Student.hello();
+        document.getElementById("hi").innerHTML = myname.hi();
+        document.getElementById("welcome").innerHTML = Student.welcome(myname);
     </script>
 </body>
+
 </html>
